@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome Page</title>
+	<script type="text/javascript">
+		
+		function init(){
+			console.log("initializing");
+
+			document.getElementById("signupBtn").addEventListener('click',function(){
+				document.location = "signup.html";
+			});
+
+			document.getElementById("loginBtn").addEventListener('click',function(){
+				document.location = "login.html";
+			});
+			
+			console.log("initialized");
+		}
+	</script>
+
+</head>
+<body>
+	<h1>Welcome !!</h1>
+
+	<input type="button" value="signup" id="signupBtn" />
+	<input type="button" value="Login" id="loginBtn" />
+
+	<script>
+		window.addEventListener('load',init);
+	</script>
+
+</body>
+</html>
